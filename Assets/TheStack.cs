@@ -203,7 +203,7 @@ public class TheStack : MonoBehaviour
         float f = Mathf.Sin(scoreCount * 0.25f);
 
         for (int i = 0; i < vertices.Length; i++)
-            colors[i] = Lerp4(gameColors[0], gameColors[1], gameColors[3], f);
+            colors[i] = Lerp4(gameColors[0], gameColors[1], gameColors[2], gameColors[3], f);
 
         mesh.colors32 = colors;
     }
